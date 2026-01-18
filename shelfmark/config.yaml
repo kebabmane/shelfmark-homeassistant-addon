@@ -1,6 +1,6 @@
 name: Shelfmark
 description: Book and audiobook download aggregator - search and download from multiple sources in one unified interface
-version: "1.0.1"
+version: "1.0.2"
 slug: shelfmark
 url: https://github.com/calibrain/shelfmark
 arch:

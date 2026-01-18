@@ -5,8 +5,8 @@ set -e
 CONFIG_PATH=/data/options.json
 
 if [ -f "$CONFIG_PATH" ]; then
-    TIMEZONE=$(jq -r '.timezone // "Etc/UTC"' "$CONFIG_PATH")
-    LOG_LEVEL=$(jq -r '.log_level // "info"' "$CONFIG_PATH")
+    TIMEZONE=$(python3 -c "import json; print(json.load(open('$CONFIG_PATH')).get('timezone', 'Etc/UTC'))")
+    LOG_LEVEL=$(python3 -c "import json; print(json.load(open('$CONFIG_PATH')).get('log_level', 'info'))")
 else
     TIMEZONE="Etc/UTC"
     LOG_LEVEL="info"
