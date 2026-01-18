@@ -1,6 +1,6 @@
 name: Shelfmark
 description: Book and audiobook download aggregator - search and download from multiple sources in one unified interface
-version: "1.0.0"
+version: "1.0.1"
 slug: shelfmark
 url: https://github.com/calibrain/shelfmark
 arch:
@@ -10,13 +10,10 @@ arch:
 startup: application
 boot: auto
 init: false
-ingress: true
-ingress_port: 8084
-ingress_stream: true
-panel_icon: mdi:book-open-page-variant
-panel_title: Shelfmark
 ports:
-  8084/tcp: null
+  8084/tcp: 8084
+ports_description:
+  8084/tcp: Shelfmark Web UI
 map:
   - media:rw
 options:
@@ -25,4 +22,3 @@ options:
 schema:
   timezone: str
   log_level: list(debug|info|warning|error)
-image: ghcr.io/calibrain/shelfmark:{arch}

@@ -15,7 +15,7 @@ Shelfmark is a unified web interface for searching and downloading books and aud
 2. Install the Shelfmark add-on
 3. Configure your timezone in the add-on settings
 4. Start the add-on
-5. Access Shelfmark from the Home Assistant sidebar
+5. Access Shelfmark at `http://your-ha-ip:8084`
 
 ## Configuration
 
