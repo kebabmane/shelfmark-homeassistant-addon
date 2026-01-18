@@ -1,0 +1,6 @@
+build_from:
+  amd64: ghcr.io/calibrain/shelfmark:latest
+  aarch64: ghcr.io/calibrain/shelfmark:latest
+  armv7: ghcr.io/calibrain/shelfmark:latest
+args:
+  BUILD_ARCH: ${BUILD_ARCH}

@@ -1,0 +1,7 @@
+configuration:
+  timezone:
+    name: Timezone
+    description: Your local timezone (e.g., America/New_York, Europe/London)
+  log_level:
+    name: Log Level
+    description: Logging verbosity level
